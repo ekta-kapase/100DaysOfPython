@@ -1,18 +1,21 @@
+#Code by Ekta Kapase
+
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
 
-
 name1= name1.lower()
 name2= name2.lower()
-count_t = name1.count("t") + name2.count("t")
-count_r = name1.count("r") + name2.count("r")
-count_u = name1.count("u") + name2.count("u")
-count_e = name1.count("e") + name2.count("e")
+combined_name= name1 + name2
 
-count_l = name1.count("l") + name2.count("l")
-count_o = name1.count("o") + name2.count("o")
-count_v = name1.count("v") + name2.count("v")
+count_t = combined_name.count("t")
+count_r = combined_name.count("r") 
+count_u = combined_name.count("u") 
+count_e = combined_name.count("e")
+
+count_l = combined_name.count("l") 
+count_o = combined_name.count("o")
+count_v = combined_name.count("v")
 
 
 tens_place = str(count_t + count_r + count_u + count_e)
