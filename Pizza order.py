@@ -1,31 +1,35 @@
 #Code by Ekta Kapase
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
 
-name1= name1.lower()
-name2= name2.lower()
-combined_name= name1 + name2
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
 
-count_t = combined_name.count("t")
-count_r = combined_name.count("r") 
-count_u = combined_name.count("u") 
-count_e = combined_name.count("e")
+bill = 0;
 
-count_l = combined_name.count("l") 
-count_o = combined_name.count("o")
-count_v = combined_name.count("v")
+#size
 
+if size == "S":
+  bill = 15
+elif size== "M":
+  bill = 20
+elif size== "L":
+  bill = 25
+  
+#pepperoni
+  
+if add_pepperoni == "Y":
+  if size=="S":
+    bill +=2
+  else:
+    bill+= 3
 
-tens_place = str(count_t + count_r + count_u + count_e)
-ones_place = str(count_l + count_o + count_v + count_e)
+#cheese
+  
+if extra_cheese == "Y":
+  bill +=1
+  
+#final_bill
 
-score = (tens_place) +(ones_place)
-score = int(score)
-
-if 90<score<10:
-  print(f"Your score is {score},you go together like coke and mentos.")
-elif 40<score<50:
-  print(f"Your score is {score}, you are alright together.")
-else:
-  print(f"Your score is {score}.")
+print(f"Your final bill is {bill}.")
+print("Thanks for ordering!")
