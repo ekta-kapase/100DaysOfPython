@@ -47,9 +47,9 @@ print('''_____________________________________________
 |.'.','         /%%%%%%%%%%%%%\         ','.'.|
 |.','          /%%%%%%%%%%%%%%%\          ','.|
 |;____________/%%%%%Start!%%%%%%\____________;|''')
-choice1 = input("You are standing in a closed room with 2 exits, one to your left and other to your right. Which exit will you choose to start your treasure hunt? Left or Right --> ").lower()
+choice1 = input("You are standing in a closed room with 2 exits, one to your left and other to your right. Which exit will you choose to start your treasure hunt? Left or Right -->\n ").lower()
 if choice1 == "left":
-  choice2 = input("You are out of room into mesmorizing nature facing a river across with a weak, frail bridge. Would you cross the river using by BRIDGE or WAIT for the boat ferry? Bridge or Ferry --> ").lower()
+  choice2 = input("You are out of room into mesmorizing nature facing a river across with a weak, frail bridge. Would you cross the river using by BRIDGE or WAIT for the boat ferry? Bridge or Ferry -->\n ").lower()
   if choice2 == "bridge":
     print('''                                                          
                                                           
@@ -71,7 +71,7 @@ if choice1 == "left":
      |  _  -                          - _        .       
                                                 /       ''')
     
-    choice3=input("You took the risk, but crossed the bridge safely. You continued the road for 1km nearing a cave. You entered the cave and saw 3 chests - Golden, Silver and Maroon. Which chest would you choose? ").lower()
+    choice3=input("You took the risk, but crossed the bridge safely. You continued the road for 1km nearing a cave. You entered the cave and saw 3 chests - Golden, Silver and Maroon. Which chest would you choose?\n ").lower()
     if choice3== "silver":
       print("Congratulations!!! You found the treasure!🪙")
     elif choice3== "golden":
