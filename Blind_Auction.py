@@ -1,7 +1,19 @@
 #Code by Ekta Kapase
 
 from replit import clear
-from art import logo
+logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
 print(logo)
 print("Let's start bidding!!")
 
